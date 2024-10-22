@@ -6,12 +6,12 @@ import { Evolucion } from "./MagoEvo";
 let aquiles:Guerrero = new Guerrero("Aquiles");
 let merlin:Mago = new Mago("Merlin");
 let legolas:Elfo = new Elfo("Legolas");
-let harry:Evolucion = new Evolucion("Harry Potter")
+let harry:Evolucion = new Evolucion("Harry");
 
-legolas.ataqueConFlecha()
+legolas.atacar()
 legolas.getAtaque()
 
-merlin.ataqueMagico()
+merlin.atacar()
 merlin.getAtaque()
 
 
@@ -19,7 +19,7 @@ aquiles.getVida()
 aquiles.recibeSuperAtaque()
 aquiles.restituyeVida()
 
-aquiles.ataqueConEspada()
+aquiles.atacar()
 aquiles.getAtaque()
 aquiles.recibeSuperAtaque()
 aquiles.recibeSuperAtaque()

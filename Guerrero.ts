@@ -1,14 +1,15 @@
 import { Personaje } from "./Personaje";
 
 export class Guerrero extends  Personaje {
+    protected armaAtaque: string = "Espada de excalibur"
 
     constructor(nombre:string,) {
         super(nombre) 
     }
 
-    public ataqueConEspada() {
+    public atacar():void {
         this.ataque= this.ataque -1
-        console.log(`${this.nombre} ataca con su espada`)
+        console.log(`${this.nombre} ataca con ${this.armaAtaque}`)
  
     }
 }

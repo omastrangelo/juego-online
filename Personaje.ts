@@ -1,4 +1,4 @@
-export class Personaje {
+export  abstract class Personaje {
     protected  nombre: string;
     protected   vida: number= 100;
     protected ataque: number=10;
@@ -6,6 +6,8 @@ export class Personaje {
         this.nombre=nombre;
 
     }
+
+    abstract  atacar(): void
 
     public getAtaque ():void {
         console.log( `${this.nombre} utilizó sus poderes y ahora le quedan ${this.ataque} oportunidades para seguir atacando `)
